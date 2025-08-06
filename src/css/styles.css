@@ -1,0 +1,53 @@
+/* rubik-300 - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Rubik';
+	font-style: normal;
+	font-weight: 300;
+	src: url('/fonts/rubik-v30-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* rubik-regular - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Rubik';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/fonts/rubik-v30-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* rubik-500 - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Rubik';
+	font-style: normal;
+	font-weight: 500;
+	src: url('/fonts/rubik-v30-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+	--clr-purple600: hsl(246, 80%, 60%);
+	--clr-work-bg: hsl(15, 100%, 70%);
+	--clr-play-bg: hsl(195, 74%, 62%);
+	--clr-study-bg: hsl(348, 100%, 68%);
+	--clr-exercise-bg: hsl(145, 58%, 55%);
+	--clr-social-bg: hsl(264, 64%, 52%);
+	--clr-selfcare-bg: hsl(43, 84%, 65%);
+
+	--clr-Navy950: hsl(226, 43%, 10%);
+	--clr-Navy900: hsl(235, 46%, 20%);
+	--clr-Purple500: hsl(235, 45%, 61%);
+	--clr-Navy200: hsl(236, 100%, 87%);
+
+	--ff-main: 'Rubik', sans-serif;
+	--fw-regular: 400;
+	--fw-thin: 300;
+	--fw-bold: 500;
+}
+
+body {
+	justify-self: center;
+	color: var(--clr-Navy200);
+	font-family: var(--ff-main);
+	background-color: var(--clr-Navy950);
+}
