@@ -42,7 +42,8 @@
 
 <style>
 	.userCard {
-		width: 350px;
+		width: 20.5rem;
+		height: 100%;
 		display: grid;
 		background-color: var(--clr-Navy900);
 		border-radius: 1rem;

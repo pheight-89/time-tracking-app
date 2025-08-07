@@ -7,31 +7,36 @@
 		<img src={iconUrl} alt="{title} icon" />
 	</div>
 	<div class="cardDetails">
-		<p class="title">{title}</p>
-		<p class="currentTime">{currentTime}</p>
-		<img class="ellipsis" src="/images/icon-ellipsis.svg" alt="ellipsis icon" />
-		<p class="previousTime">{previousTime}</p>
+		<div class="header-row">
+			<p class="title">{title}</p>
+			<img class="ellipsis" src="/images/icon-ellipsis.svg" alt="ellipsis icon" />
+		</div>
+		<div class="time-row">
+			<p class="currentTime">{currentTime}</p>
+			<p class="previousTime">{previousTime}</p>
+		</div>
 	</div>
 </div>
 
 <style>
 	.card {
-		width: 350px;
+		width: 20.5rem;
+		max-width: 100%;
 		border-radius: 1rem;
-		margin-block: 1.5rem;
+		overflow: hidden;
 	}
 
 	.title-icon {
 		display: flex;
-		justify-content: end;
-		padding-inline: 1rem;
+		justify-content: flex-end;
+		padding-right: 1rem;
+		height: 2.5rem;
 		overflow: hidden;
-		height: 30px;
 	}
 
 	.title-icon img {
-		margin-top: -5px;
-		height: 60px;
+		margin-top: -10px;
+		height: 5rem;
 		overflow: hidden;
 	}
 	.work {
@@ -59,42 +64,44 @@
 	}
 
 	.cardDetails {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
+		display: flex;
+		flex-direction: column;
 		background-color: var(--clr-Navy900);
 		padding: 2rem;
-		row-gap: 1rem;
 		border-radius: 1rem;
+		gap: 0.5rem;
+	}
+
+	.header-row,
+	.time-row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
 	}
 
 	.title {
 		font-size: 1.125rem;
-		margin: inherit;
+		margin: 0;
 		font-weight: var(--fw-regular);
 		color: white;
 	}
 
 	.currentTime {
-		margin: inherit;
+		margin: 0;
 		font-size: 2rem;
 		font-weight: var(--fw-thin);
 		color: white;
 	}
 
 	.previousTime {
-		font-size: 0.925rem;
-		margin: inherit;
-		justify-self: end;
-		align-self: center;
-		font-weight: var(--fw0-thin);
+		margin: 0;
+		font-weight: var(--fw-thin);
 	}
 
 	.ellipsis {
-		margin: inherit;
-		align-self: center;
-		justify-self: end;
-		grid-row-start: 1;
-		grid-column: 2;
+		margin: 0;
+		height: 8px;
 		cursor: pointer;
 	}
 </style>

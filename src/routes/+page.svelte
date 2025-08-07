@@ -43,5 +43,6 @@
 		padding: 1.5rem;
 		margin: 0 auto;
 		align-content: center;
+		gap: 1rem;
 	}
 </style>
