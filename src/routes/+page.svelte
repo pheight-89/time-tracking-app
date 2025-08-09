@@ -42,7 +42,7 @@
 		align-content: center;
 		gap: 1rem;
 	}
-	@media (min-width: 768px) {
+	@media (min-width: 968px) {
 		main {
 			grid-template-columns: repeat(4, 1fr);
 			max-width: 1200px;

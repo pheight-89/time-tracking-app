@@ -81,7 +81,7 @@
 		cursor: pointer;
 	}
 
-	@media (min-width: 768px) {
+	@media (min-width: 968px) {
 		.time-row {
 			flex-direction: column;
 			align-items: start;

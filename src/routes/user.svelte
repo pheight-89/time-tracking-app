@@ -95,7 +95,7 @@
 		color: white;
 	}
 
-	@media (min-width: 768px) {
+	@media (min-width: 968px) {
 		.userContainer {
 			flex-direction: column;
 		}
