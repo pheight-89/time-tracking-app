@@ -12,7 +12,7 @@
 <div class="userCard">
 	<div class="userContainer">
 		<div class="userImage">
-			<img class="profilePicture" src="/images/image-jeremy.png" alt="profile picture" />
+			<img class="profilePicture" src="/images/image-jeremy.png" alt="Jeremy Robson profile" />
 		</div>
 		<div class="userDetails">
 			<p>Report for</p>
