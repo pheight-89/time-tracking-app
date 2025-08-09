@@ -46,8 +46,31 @@
 }
 
 body {
-	justify-self: center;
+	display: flex;
 	color: var(--clr-Navy200);
 	font-family: var(--ff-main);
 	background-color: var(--clr-Navy950);
+}
+.work {
+	background-color: var(--clr-work-bg);
+}
+
+.play {
+	background-color: var(--clr-play-bg);
+}
+
+.study {
+	background-color: var(--clr-study-bg);
+}
+
+.exercise {
+	background-color: var(--clr-exercise-bg);
+}
+
+.social {
+	background-color: var(--clr-social-bg);
+}
+
+.self-care {
+	background-color: var(--clr-selfcare-bg);
 }

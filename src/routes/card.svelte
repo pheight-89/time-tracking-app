@@ -20,8 +20,6 @@
 
 <style>
 	.card {
-		width: 20.5rem;
-		max-width: 100%;
 		border-radius: 1rem;
 		overflow: hidden;
 	}
@@ -39,31 +37,9 @@
 		height: 5rem;
 		overflow: hidden;
 	}
-	.work {
-		background-color: var(--clr-work-bg);
-	}
-
-	.play {
-		background-color: var(--clr-play-bg);
-	}
-
-	.study {
-		background-color: var(--clr-study-bg);
-	}
-
-	.exercise {
-		background-color: var(--clr-exercise-bg);
-	}
-
-	.social {
-		background-color: var(--clr-social-bg);
-	}
-
-	.self-care {
-		background-color: var(--clr-selfcare-bg);
-	}
 
 	.cardDetails {
+		height: 100%;
 		display: flex;
 		flex-direction: column;
 		background-color: var(--clr-Navy900);
@@ -103,5 +79,17 @@
 		margin: 0;
 		height: 8px;
 		cursor: pointer;
+	}
+
+	@media (min-width: 768px) {
+		.time-row {
+			flex-direction: column;
+			align-items: start;
+		}
+
+		.currentTime {
+			font-size: 3.5rem;
+			margin-block: 1rem;
+		}
 	}
 </style>

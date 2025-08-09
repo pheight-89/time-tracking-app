@@ -42,7 +42,6 @@
 
 <style>
 	.userCard {
-		width: 20.5rem;
 		height: 100%;
 		display: grid;
 		background-color: var(--clr-Navy900);
@@ -94,5 +93,30 @@
 
 	.active {
 		color: white;
+	}
+
+	@media (min-width: 768px) {
+		.userContainer {
+			flex-direction: column;
+		}
+		.profilePicture {
+			height: 70px;
+			border: solid 3px white;
+			border-radius: 50%;
+			margin-bottom: 1rem;
+		}
+
+		.userDetails p:nth-child(2) {
+			font-size: 2.5rem;
+			margin-top: 1rem;
+			font-weight: var(--fw-thin);
+			color: white;
+		}
+
+		.frequencySelector {
+			flex-direction: column;
+			align-items: start;
+			padding-inline: 2rem;
+		}
 	}
 </style>
